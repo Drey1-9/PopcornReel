@@ -1,0 +1,79 @@
+/* Ingresar Screen */
+/* Este documento es para darle el estilo al Ingreso */
+
+html, body {
+    background-color: #000030;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
+	position: fixed;
+    font-family: "Afacad Flux";
+}
+    
+.container {
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+}
+    
+.container img {
+    width: 100vw; 
+    height: auto; 
+    margin-top: -10px;
+}
+#logo img {
+    width: 160px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -1100px;
+}
+.formulario{
+   
+    display: flex; 
+    justify-content: center; 
+    margin-top: -500px;
+}
+.row{
+    margin-top: 18px;
+    align-items: center;
+}
+#title{
+    color: #F3CC1F;
+	text-align: center;
+	font-size: 34px
+}
+#email{
+    border-radius: 10px;
+	padding: 5px;
+	border: none;
+	padding-left: 10px;
+}
+#password, #username, #confirmpassword{
+    border-radius: 10px;
+	padding: 5px;
+	border: none;
+	padding-left: 10px;
+}
+
+#btn-ingresar{
+	margin-top: 10px;
+	border-radius: 10px;
+	padding: 5px;
+	background-color: #F4CC1E;
+	border: none;
+	font-weight: bold;
+	color: #000030;
+}
+
+#signup{
+	text-decoration: none;
+	color: aliceblue;
+}
+
+#forgotPassword{
+	color: aliceblue;
+	margin-left: 70px;
+}

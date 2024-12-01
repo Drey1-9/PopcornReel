@@ -1,0 +1,209 @@
+html, body {
+    background-color: #000030;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+.app-bar-container {
+    display: flex;
+    gap: 20px;
+    top: 0;
+}
+
+.logo img {
+    height: 90px; 
+    float: left;
+    margin-right: 10px; 
+        
+}
+.chips-bar {
+    display: flex; 
+    gap: 8px; 
+    overflow-x: auto; 
+    padding: 10px 16px; 
+    border-radius: 16px; 
+    box-sizing: border-box; 
+    scrollbar-width: none; 
+}
+
+.chips-bar::-webkit-scrollbar {
+    display: none; 
+}
+
+.chips {
+    flex: 0 0 auto; 
+    padding: 8px 16px; 
+    border: 2px solid #E7E3E1; 
+    border-radius: 10px; 
+    color: #E7E3E1; 
+    background-color: transparent; 
+    text-align: center; 
+    cursor: pointer; 
+    white-space: nowrap; 
+    transition: background-color 0.3s, color 0.3s; 
+    display: flex;
+    justify-content: space-between;
+    font-family: "Afacad Flux";
+    font-size: 16px;
+}
+
+.chips:hover {
+    border: 2px solid #ffcc00; 
+    color: #ffcc00 /* Texto oscuro en hover */
+}
+.chips h2{
+    font-family: "Afacad Flux";
+    font-size: 16px;
+}
+#icon-categories {
+    margin-left: 8px; /* Espaciado entre el texto y el ícono */
+    height: 10px; /* Tamaño del ícono */
+    vertical-align: middle; /* Centra el ícono verticalmente con el texto */
+}
+.big-card{
+    margin-left: 16px;
+    margin-top: 10px;
+}
+.item {
+    width: 30px;
+    height: 30px;
+ }
+
+.card{
+    width: 120px;
+    height: 190px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+.img-card img{
+    width: 120px;
+    height: 150px;
+    border-radius: 5px;
+}
+.information{
+    width: 120px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.info{
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+.info h3{
+    width: 60px;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+.info img{
+    margin-top: -2px;
+    right: 0;
+    position: absolute;
+}
+.info h4{
+    right: 0; 
+}
+.information p{
+    width: 120px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    margin-top: -8px;
+}
+h1{
+    color: #ffcc00;
+    font-family: "Afacad Flux";
+    font-weight: 600px;
+    font-size: 16px;
+}
+h3{
+    color: #E7E3E1;
+    font-family: "Mulish";
+    font-weight: 600px;
+    font-size: 14px;
+    
+}
+h4{
+    color: #ffcc00;
+    font-family: "Mulish";
+    font-weight: 600px;
+    font-size: 13px;
+}
+p{
+    color: #999999;
+    font-family: "Mulish";
+    font-weight: 600px;
+    font-size: 12px;
+}
+.fab-button{
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    z-index: 100;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #ffcc00;
+    background-color: #ffcc00;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.side-scroll {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.side-scroll::-webkit-scrollbar{
+    display: none;
+}
+.side-scroll .card{
+    width: 120px;
+    height: 190px;
+    background: none;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.main-nav-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #000030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.main-nav-bar .icon{
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+}
+.main-nav-bar .img-icon{
+    width: 42px;
+    height: 42px;
+}
+.main-nav-bar h2{
+    font-size: 16px;
+    font-family: "Afacad Flux";
+}
+#home-card h2{
+    color: #ffcc00;
+}
+#search-card h2, #user-card h2{
+    color: #E7E3E1;
+}
